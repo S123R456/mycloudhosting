@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name = "Viewport" content="width=device-width,initial-scale= 1.0">
+    <title> MY RESTAURANT </title>
+    <link rel = "stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+ </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+             <a href="food.html"><img src="images/well.png"></a>
+             <div class="nav-links" id="navLinks">
+                 <i class="fas fa-times" onclick="hideMenu()"></i>
+                 <ul>
+                     <li><a href="food.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="menu.html">MENU</a></li>    
+                  <li><a href="Delivery.html">ORDER</a></li> 
+                  <li><a href="booking.html">DINE IN</a></li> 
+                  <li><a href="contact.html">CONTACT US </a></li> 
+                 </ul>
+            </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+             <h1> CONTACT US </h1>
+            
+        
+        </section>
+        
+        
+        <! ----contact us ---->
+        
+        <section class = "location">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.1054460762493!2d80.20833431430547!3d13.092503215757416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52643d432b8265%3A0xa1867810306201a9!2sThe%20Feast!5e0!3m2!1sen!2sin!4v1624167525566!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        
+        </section>
+        
+        <section class = "contact-us">
+        
+            <div class = "row">
+                <div class = "contact-col">
+                </div>
+                   <i class="fas fa-home"></i>
+                   <span>
+                     <h5>XYZ Road, ABC Building</h5>
+                     <p>Chennai, Tamilnadu, India</p>   
+                </span>
+            </div>
+            <div>
+              <i class="fas fa-phone-square-alt"></i>
+                   <span>
+                     <h5>+91 7839810837</h5>
+                     <p> Its 24/7!!</p>   
+                </span>
+            </div>
+            <div>
+            
+                <i class="fas fa-envelope"></i>
+                   <span>
+                     <h5>thefeast@chen.com</h5>
+                     <p>Mail us your feedback and queries</p>   
+                </span></div>
+            <div class="contact-col">
+             
+                <form actions = "form.php" method="post">
+                  <input type = "text" name="name" placeholder= "Enter your name" required>
+                  <input type = "email" name="email" placeholder= "Enter Email Address" required>
+                  <input type = "text" name="subject" placeholder= "Enter your Feedback" required>
+                  <textarea rows="8" name="message" placeholder="Message" required></textarea>   
+                  <button type="submit" class = "hero-btn red-btn">Send Feedback</button>    
+                </form> 
+                
+            
+            
+            </div>
+        </section>
+    
+        
+        <! ------Footer ------>
+        
+        <section class = "footer">
+           <h4>About Us</h4>
+            <p>Our mission is to WOW people everyday</p>
+           <div class = "icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-linkedin"></i>
+            </div>
+        </section>
+        
+      
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+      <!-------JavaScript for Toggle Menu------>
+        
+        <script>
+        
+           var navLinks = document.getElementById("navLinks"); 
+           function showMenu(){
+               navLinks.style.right = "0";
+           }    
+           function hideMenu(){
+               navLinks.style.right = "-200px";
+           }  
+        </script>
+    
+    </body>
+    
+    
+</html>

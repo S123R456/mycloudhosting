@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name = "Viewport" content="width=device-width,initial-scale= 1.0">
+    <title> MY RESTAURANT </title>
+    <link rel = "stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+ </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+             <a href="food.html"><img src="images/well.png"></a>
+             <div class="nav-links" id="navLinks">
+                 <i class="fas fa-times" onclick="hideMenu()"></i>
+                 <ul>
+                 <li><a href="food.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="menu.html">MENU</a></li>    
+                  <li><a href="Delivery.html">ORDER</a></li> 
+                  <li><a href="booking.html">DINE IN</a></li> 
+                  <li><a href="contact.html">CONTACT US </a></li>  
+                 </ul>
+            </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+             <h1> ABOUT US</h1>
+            
+        
+        </section>
+        
+     <! ----- about us content ------>
+        <section class = "about-us">
+        
+            <div class = "row">
+              <div class = "about-col">
+                  <h1><b>WE SERVE THE MOST DEICIOUS FOOD</b></h1>
+                  <p><b>Since our modest beginnings 2005 with a little space in Chennai."The Feast's development has been enlivened with the energy to cook and serve solid Indian-roused delicious food.<br> We welcome you to sit back , unwind and appreciate the lovely moments in your life while our best gourmet expert sets you up a amazing events of your choice with scrumptious dinner utilzing the best and freshest ingredients<br></b>
+                      <b>Enjoy our dazzling dishes on any meal of yours and make the most of your eating background with us!<br>
+                   
+                          Oh Wait! Did we inform us! We even deliver to your place.</b>
+                  </p>
+                  <a href=""class= "hero-btn red-btn">TRY NOW </a>
+                </div>
+                <div class="ctn">
+                   <img src="images/okk.png">
+               </div>
+            </div>
+        </section>
+     
+        
+        <! ------Footer ------>
+        
+        <section class = "footer">
+           <h4>ABOUT US</h4>
+            <p>Our mission is to WOW people everyday</p>
+           <div class = "icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-linkedin"></i>
+            </div>
+        </section>
+        
+      
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+      <!-------JavaScript for Toggle Menu------>
+        
+        <script>
+        
+           var navLinks = document.getElementById("navLinks"); 
+           function showMenu(){
+               navLinks.style.right = "0";
+           }    
+           function hideMenu(){
+               navLinks.style.right = "-200px";
+           }  
+        </script>
+    
+    </body>
+    
+    
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name = "Viewport" content="width=device-width,initial-scale= 1.0">
+    <title> MY RESTAURANT </title>
+    <link rel = "stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+ </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+             <a href="food.html"><img src="images/well.png"></a>
+             <div class="nav-links" id="navLinks">
+                 <i class="fas fa-times" onclick="hideMenu()"></i>
+                 <ul>
+                   <li><a href="food.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="menu.html">MENU</a></li>    
+                  <li><a href="Delivery.html">ORDER</a></li> 
+                  <li><a href="booking.html">DINE IN</a></li> 
+                  <li><a href="contact.html">CONTACT US </a></li> 
+                 </ul>
+            </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1> DINE IN </h1>
+        
+        </section>
+         <!----BOOK A TABLE ----->
+        
+        <section class = "Book a table">
+            <h2> BOOK A TABLE </h2>
+          <div class="elem-group">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="visitor_name" placeholder="Soundarya" pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="email">Your E-mail</label>
+    <input type="email" id="email" name="visitor_email" placeholder="soundaryaraghu@email.com" required>
+  </div>
+  <div class="elem-group">
+    <label for="phone">Your Phone</label>
+    <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+  </div>
+  <hr>
+  <div class="elem-group inlined">
+    <label for="adult">Adults</label>
+    <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="child">Children</label>
+    <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="date">Check-in-Date</label>
+    <input type="date" id="date" name="date" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="time">Check-in Time</label>
+    <input type="time" id="time" name="time" required>
+  </div>
+             <button type="submit">Book A Table</button>
+        </section>
+        
+        
+        
+ 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <! ------Footer ------>
+        
+        <section class = "footer">
+           <h4>About Us</h4>
+            <p>Our mission is to WOW people everyday</p>
+           <div class = "icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-linkedin"></i>
+            </div>
+        </section>
+        
+      
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+      <!-------JavaScript for Toggle Menu------>
+        
+        <script>
+        
+           var navLinks = document.getElementById("navLinks"); 
+           function showMenu(){
+               navLinks.style.right = "0";
+           }    
+           function hideMenu(){
+               navLinks.style.right = "-200px";
+           }  
+        </script>
+    
+    </body>
+    
+    
+</html>
